@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Language Learning App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌍 Language Learning App</h1>
+
+        <div class="tabs">
+            <button onclick="showSection('lesson')">Daily Lesson</button>
+            <button onclick="showSection('flashcards')">Flashcards</button>
+            <button onclick="showSection('quiz')">Quiz</button>
+        </div>
+
+        <!-- Daily Lesson -->
+        <div id="lesson" class="section">
+            <h2>📘 Daily Vocabulary</h2>
+            <p id="dailyWord"></p>
+            <button onclick="nextLesson()">Next Word</button>
+        </div>
+
+        <!-- Flashcards -->
+        <div id="flashcards" class="section hidden">
+            <h2>📝 Flashcards</h2>
+            <div class="card" onclick="flipCard()">
+                <p id="cardFront"></p>
+                <p id="cardBack" class="hidden"></p>
+            </div>
+            <button onclick="nextCard()">Next Card</button>
+        </div>
+
+        <!-- Quiz -->
+        <div id="quiz" class="section hidden">
+            <h2>🧠 Quiz</h2>
+            <p id="question"></p>
+            <input type="text" id="answer" placeholder="Type your answer">
+            <button onclick="checkAnswer()">Submit</button>
+            <p id="result"></p>
+            <p id="score"></p>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
