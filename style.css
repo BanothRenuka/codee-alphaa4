@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #ff8c00;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.tabs button:hover {
+    background-color: #e67e00;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 15px 0;
+    min-height: 60px;
+}
+
+input {
+    padding: 8px;
+    width: 80%;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 10px;
+}
